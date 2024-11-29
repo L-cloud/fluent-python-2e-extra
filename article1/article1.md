@@ -3,7 +3,9 @@
 `bisect` 모듈은 `bisect()`와 `insort()` 함수를 제공한다. bisect()는 이진 검색 알고리즘을 이용해 시퀀스를 검색하고, `insort()`는 정렬된 시퀀스 안에 항목을 삽입한다.
 
 내용:
+
 [1.1 `bisect()`로 검색하기](article1.md#11-bisect로-검색하기)
+
 [1.2.`insort()`로 삽입하기](article1.md#12-insort로-삽입하기)
 
 ## 1.1 `bisect()`로 검색하기
