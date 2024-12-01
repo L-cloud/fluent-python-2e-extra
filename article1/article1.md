@@ -117,6 +117,7 @@ for i in range(SIZE):
 ```
 
 _그림 3. [예제 4]를 실행한 결과_
+
 ![](./figs/flup_0103.png)
 
 `bisect()` 함수와 마찬가지로 `insort()` 함수도 선택적으로 `lo`와 `hi` 인수를 받아 시퀀스 안에서 검색할 범위를 제한한다. 그리고 삽입 위치를 검색하기 위해 `bisect_left()` 함수를 사용하는 `insort_left()` 함수도 있다.
