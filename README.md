@@ -8,7 +8,7 @@
 
 [2. `set`과 `dict`의 내부 구조](./article2/article2.md)
 
-[3. Building Multi-Character Emojis (번역중)](https://www.fluentpython.com/extra/multi-character-emojis/)
+[3. 다중 문자 이모지 만들기](./article3/article3.md)
 
 [4. Parsing binary records with `struct` (번역중)](https://www.fluentpython.com/extra/parsing-binary-struct/)
 
