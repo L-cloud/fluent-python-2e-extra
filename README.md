@@ -10,7 +10,7 @@
 
 [3. 다중 문자 이모지 만들기](./article3/article3.md)
 
-[4. `struct`로 이진 데이터 파싱하기](./article4/article4.md)
+[4. `struct`로 이진 레코드 파싱하기](./article4/article4.md)
 
 [5. Weak References (번역중)](https://www.fluentpython.com/extra/weak-references/)
 
