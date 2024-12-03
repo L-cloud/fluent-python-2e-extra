@@ -10,7 +10,7 @@
 
 [4.2 `struct` 기본 지식](article4.md#42-struct-기본-지식)
 
-[4.3 구조체와 메모리뷰](article4.md#43-구조체와-메모리뷰)
+[4.3 `struct`와 `memoryview`](article4.md#43-struct와-memoryview)
 
 ## 4.1 `struct`를 사용해야 하나?
 
@@ -52,7 +52,7 @@ b"\xe2\x07\x00\x00Tokyo\x00\xc5\x05\x01\x00\x00\x00JP\x00\x00\x11X'L"
 (2018, b'Tokyo\x00\xc5\x05\x01\x00\x00\x00', b'JP', 43868228.0)
 ```
 
-`unpack()`이 `FORMAT` 문자열에 명시된 필드 네 개가 있는 튜플을 반환하는 방법을 잘 살펴보라. `FORMAT`에 있는 문자와 숫자는 `struct` 모듈 문서(https://docs.python.org/3.8/library/struct.html)에 설명된 포맷 문자(https://docs.python.org/3.8/library/struct.html#format-characters)들이다.
+`unpack()`이 `FORMAT` 문자열에 명시된 필드 네 개가 있는 튜플을 반환하는 방법을 잘 살펴보라. `FORMAT`에 있는 문자와 숫자는 `struct` 모듈 문서(https://docs.python.org/3.8/library/struct.html) 에 설명된 포맷 문자(https://docs.python.org/3.8/library/struct.html#format-characters) 들이다.
 
 [표 1]은 [예제 2]의 포맷 문자열 요소를 설명한다.
 
@@ -78,7 +78,7 @@ $ python3 metro_read.py
 
 [예제 3]은 편리한 `struct.iter_unpack()` 함수의 사용예를 보여준다.
 
-_예제 3. metro\_read.py: metro\_areas.bin 파일 안의 레코드를 모두 나열한다
+_예제 3. metro\_read.py: metro\_areas.bin 파일 안의 레코드를 모두 나열한다_
 
 ```python
 from struct import iter_unpack
@@ -99,18 +99,25 @@ for fields in iter_unpack(FORMAT, data):       # (6)
 ```
 
 (1) `struct` 포맷
+
 (2) `bytes` 필드를 디코딩하는 편리 함수. `str`을 반환한다.[^2]
+
 (3) 널 문자로 끝나는 C 문자열을 처리한다. `b'\0'`으로 분할하고 첫 번째 부분을 가져온다.
+
 (4) `bytes`를 `str`로 디코딩한다.
+
 (5) 파일을 이진 모드로 열고 전체를 읽는다. `data`는 `bytes` 객체다.
+
 (6) `iter_unpack()`은 포맷 문자열에 매칭되는 각 바이트 시퀀스에 대해 튜플 하나를 생성하는 제너레이터를 반환한다.
+
 (7) `name`과 `country` 필드에 대해 `text()` 함수가 처리를 약간 더 한다.
+
 
 `struct` 모듈은 널 문자로 끝나는 문자열을 지정하는 방법을 제공하지 않는다. 앞 예제의 `name`과 같은 필드를 처리할 때 언패킹한 후 반환된 바이트 시퀀스에서 처음 나오는 `b'\0'`와 그 뒤의 모든 바이트들을 버려야 한다. 첫 번째 `b'\0'` 다음부터 필드의 끝까지 쓰레기 값이 들어있을 가능성이 높다. [예제 2]에서  쓰레기 값을 볼 수 있다.
 
 다음 절에서는 메모리뷰를 설명한다. 메모리뷰는 `struct`를 사용한 프로그램을 실험하고 디버깅하기 쉽게 해준다.
 
-## 4.3 구조체와 메모리뷰
+## 4.3 `struct`와 `memoryview`
 
 파이썬에서 제공하는 `memoryview` 자료형은 바이트 시퀀스를 생성하거나 저장하지 않고, 대신 바이트 시퀀스를 복사할 필요 없이 이진 시퀀스, 패킹된 배열, 혹은 파이썬 이미지 라이브러리<sup>Python Image Library</sup>(PIL)에 접근을 공유할 수 있게 해준다.[^3]
 
@@ -134,11 +141,17 @@ b'GIF89a+\x02\xe6\x00'
 ```
 
 (1) `struct` 포맷. `<`: 리틀 엔디안. `3s3s`: 3 바이트 시퀀스 두 개. `HH`: 16 비트 정수 두 개
+
 (2) 메모리 안에 있는 파일 내용으로부터 `memoryview`를 생성한다.
+
 (3) 그러고 나서 이전에 생성한 `memoryview`로부터 슬라이싱해서 또 다른 `memoryview`를 만든다. 이 때 아무런 값도 복사되지 않는다.
+
 (4) 출력해보기 위해 `bytes`로 변환한다. 여기서는 10 바이트가 복사된다.
+
 (5) `memoryview`를 `(형식, 버전, 너비, 높이)` 튜플로 언패킹한다.
+
 (6) `memoryview` 인스턴스에 연결된 메모리를 해제하기 위해 참조를 제거한다.
+
 
 `memoryview`를 슬라이싱하면 아무런 바이트도 복사하지 않고 새로운 `memoryview`를 반환한다.[^4]
 
