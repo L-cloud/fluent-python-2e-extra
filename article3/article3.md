@@ -42,7 +42,7 @@ _그림 2. [예제 1]의 two\_flags.py를 실행한 화면. AA 조합은 점선 
 
 프로그램이 앱이 인식하지 못하는 표시 문자 조합을 출력하면 표시 문자가 점선 사각형 안의 글자로 출력된다. 이것 역시 UI에서 지원해야 이렇게 출력된다. [그림 2]의 마지막 줄을 참조하라.
 
->**NOTE_** 유럽과 UN은 하나의 국가는 아니지만 지역 표시자 EU와 UN으로 국기를 표현할 수 있다. 잉글랜드, 스코틀랜드, 웨일즈는 별도의 나라가 아니지만 유니코드에서 국기를 표시할 수 있다. 그러나 이런 국기들은 지역 표시 기호가 아니라 조금 더 복잡한 방법이 필요하다. 자세한 방법은 Emojipedia의 'Emoji Flags Explained'(https://blog.emojipedia.org/emoji-flags-explained/)를 참고하라.
+>**NOTE_** 유럽과 UN은 하나의 국가는 아니지만 지역 표시자 EU와 UN으로 국기를 표현할 수 있다. 잉글랜드, 스코틀랜드, 웨일즈는 별도의 나라가 아니지만 유니코드에서 국기를 표시할 수 있다. 그러나 이런 국기들은 지역 표시 기호가 아니라 조금 더 복잡한 방법이 필요하다. 자세한 방법은 Emojipedia의 '이모지 깃발에 대한 설명'(https://blog.emojipedia.org/emoji-flags-explained/)를 참고하라.
 
 이제 사람 얼굴, 손, 코 등을 보여주는 이모지에 피부색을 입히기 위해 사용할 수 있는 이모지 수정자 사용법을 알아보자.
 
@@ -155,7 +155,7 @@ _그림 6. 위쪽에는 편부모와 커플을, 왼쪽에는 소년과 소녀들
 
 유니코드 이모지 표준에 대해 더 알고 싶다면 '유니코드 인덱스 페이지'(https://unicode.org/emoji/techindex.html)를 살펴보길 바란다. 이 페이지는 '유니코드 기술 표준 #51: 유니코드 이모지'(https://unicode.org/reports/tr51/index.html)와 '이모지 데이터 파일'(https://unicode.org/Public/emoji/12.1/emoji-zwj-sequences.txt)을 볼 수 있다. [그림 5]를 생성하기 위해 이모지 데이터 파일 페이지에서 제공하는 예제 코드를 사용했다.
 
-Emojipedia(https://emojipedia.org/)는 이모지를 찾고 이모지에 대해 배우는 데 가장 좋은 웹사이트다. 검색할 수 있는 데이터베이스 외에도, Emojipedia는 '이모지 ZWJ 시퀀스: 세 글자, 많은 가능성'(https://blog.emojipedia.org/emoji-zwj-sequences-three-letters-many-possibilities/)와 '이모지 깃발 설명'(https://blog.emojipedia.org/emoji-flags-explained/) 등 좋은 글을 담은 블로그도 제공한다.
+Emojipedia(https://emojipedia.org/)는 이모지를 찾고 이모지에 대해 배우는 데 가장 좋은 웹사이트다. 검색할 수 있는 데이터베이스 외에도, Emojipedia는 '이모지 ZWJ 시퀀스: 세 글자, 많은 가능성'(https://blog.emojipedia.org/emoji-zwj-sequences-three-letters-many-possibilities/)와 '이모지 깃발에 대한 설명'(https://blog.emojipedia.org/emoji-flags-explained/) 등 좋은 글을 담은 블로그도 제공한다.
 
 2016년 뉴욕시에 있는 현대 미술 박물관(Museum of Modern Art, MoMA)은 일본 이동통신사 NTT 도코모에서 1999년 시게타카 쿠리타가 만든 이모지 176개(https://stories.moma.org/the-original-emoji-set-has-been-added-to-the-museum-of-modern-arts-collection-c6060e141f61)를 콜렉션에 추가했다.
 
