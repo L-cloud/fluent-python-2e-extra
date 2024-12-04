@@ -14,7 +14,7 @@
 
 [5. 약한 참조](./article5/article5.md)
 
-[6. Introspection of Function Parameters (번역중)](https://www.fluentpython.com/extra/function-introspection/)
+[6. 함수 매개변수의 인트로스펙션](./article6/article6.md)
 
 [7. Classic Coroutines (번역중)](https://www.fluentpython.com/extra/classic-coroutines/)
 
