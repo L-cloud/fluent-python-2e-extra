@@ -12,7 +12,7 @@
 
 [4. `struct`로 이진 레코드 파싱하기](./article4/article4.md)
 
-[5. Weak References (번역중)](https://www.fluentpython.com/extra/weak-references/)
+[5. 약한 참조](./article5/article5.md)
 
 [6. Introspection of Function Parameters (번역중)](https://www.fluentpython.com/extra/function-introspection/)
 
