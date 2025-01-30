@@ -14,7 +14,7 @@
 
 [6. 함수 매개변수의 인트로스펙션](./article6/article6.md)
 
-[7. Classic Coroutines](https://www.fluentpython.com/extra/classic-coroutines/) - 이 글은 현재 번역중입니다. 링크를 클릭하면 영문판 원문을 보실 수 있습니다.
+[7. 고전적 코루틴](./article7/article7.md)
 
 
 예제 소스 코드: https://github.com/fluentpython/example-code-2e
