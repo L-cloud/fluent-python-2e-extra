@@ -1184,7 +1184,8 @@ Event(time=11, proc=1, action='pick up passenger')
 
 `Simulator` 클래스의 전체 코드는 [예제 23]과 같다.
 
-예제 23. taxi_sim.py: 기본 뼈대를 갖춘 `Simulator` 이산 이벤트 시뮬레이션 클래스. `run()` 메서드를 중심으로 살펴보라.
+_예제 23. taxi\_sim.py: 기본 뼈대를 갖춘 `Simulator` 이산 이벤트 시뮬레이션 클래스. `run()` 메서드를 중심으로 살펴보라_
+
 ```python
 class Simulator:
 
